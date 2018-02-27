@@ -8,7 +8,7 @@
 
     internal class Program
     {
-        private const string PFX_PASSWORD = "Wangduner20131203";
+        private const string PFX_PASSWORD = "123456";
 
         private static readonly DirectoryInfo ResourceDirectory =
             new DirectoryInfo(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Resources"));
@@ -17,7 +17,7 @@
             new FileInfo(Path.Combine(ResourceDirectory.FullName, "ssl.cer"));
 
         private static readonly FileInfo PfxCertificateFile =
-            new FileInfo(Path.Combine(ResourceDirectory.FullName, "ssl.pfx"));
+            new FileInfo(@"D:\Git\my.github.com\dotnet-examples\src\X509CertificateExample.Generator\bin\Debug\CA.pfx");
 
         private static void Main(string[] args)
         {
